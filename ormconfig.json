@@ -1,0 +1,14 @@
+{
+    "type": "mongodb",
+    "host": "localhost", 
+    "url": "mongodb+srv://vitorsantos:thesocialnetwork2004@cluster0-****.mongodb.net/test?retryWrites=true&w=majority",
+    "useNewUrlParser": true,
+    "synchronize": true, 
+    "logging": true,
+    "entities": [
+        "./src/entity/user.ts"
+    ],
+    "migrations":   [
+        "./src/database/migrations/**.ts"
+    ]
+}

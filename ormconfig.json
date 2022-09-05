@@ -1,7 +1,7 @@
 {
     "type": "mongodb",
     "host": "localhost", 
-    "url": "mongodb+srv://vitorsantos:thesocialnetwork2004@cluster0-****.mongodb.net/test?retryWrites=true&w=majority",
+    "url": "mongodb+srv://<User>:<Password>@cluster0-****.mongodb.net/test?retryWrites=true&w=majority",
     "useNewUrlParser": true,
     "synchronize": true, 
     "logging": true,
@@ -9,6 +9,7 @@
         "./src/entity/user.ts"
     ],
     "migrations":   [
-        "./src/database/migrations/**.ts"
-    ]
+        "./src/database/migrations/1662401892227-CreateUsers.ts"
+    ],
+    "migrationsTableName":  "CreateUsers"
 }

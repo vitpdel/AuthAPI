@@ -1,8 +1,7 @@
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
-            IG_LOGIN: string;
-            IG_PASSWORD: string;
+            MONGO_URI:string
         }
     }
 }

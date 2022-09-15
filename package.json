@@ -3,7 +3,8 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.13",
     "@types/jsonwebtoken": "^8.5.9",
-    "mongoose": "^6.5.4",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^18.7.17",
     "nodemon": "^2.0.19",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2"
@@ -13,6 +14,7 @@
   "description": "An API for user authentication made with Typescript",
   "main": "index.ts",
   "dependencies": {
+    "mongoose": "^6.5.4",
     "abbrev": "^1.1.1",
     "acorn": "^8.8.0",
     "acorn-walk": "^8.2.0",
@@ -60,7 +62,8 @@
   },
   "scripts": {
     "typeorm": "typeorm-ts-node-commonjs -d ./src/dataSource.ts",
-    "start": "nodemon ./src/index.ts",
+    "start": "NODE_ENV=production nodemon ./src/index.ts",
+    "dev":  "NODE_ENV=development nodemon ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

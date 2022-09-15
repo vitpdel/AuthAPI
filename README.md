@@ -1,2 +1,2 @@
 # AuthAPI
-An API for user authentication made with Typescript and MongoDB
+An API for user authentication made with Typescript, Express and MongoDB

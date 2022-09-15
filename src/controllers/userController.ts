@@ -23,7 +23,7 @@ export  default {
     },
 
 
-    async   loging(req: Request,    res: Response){
+    async   login(req: Request,    res: Response){
         const   {email, password}   =   req.body
         const   user:    any    =   await   User.findOne({email})
         if(!user){

@@ -3,7 +3,7 @@ import generateToken from "../utils/generateToken"
 import  {Request,    Response}  from    "express"
 
 
-module.exports  =   {   
+export  default {   
     async   create(req:Request,res:Response){
         const    {name,  email,  password}   =   req.body
         const   userExists: any  =   await   User.findOne({  email   })
